@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: rgb(20, 22, 24);
+}
+
+#review h2 {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    margin-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.carousel-inner {
+    max-height: 185px;
+    overflow-y: hidden;
+}
+
+.container2 {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    column-gap: 5%;
+}
+.reviews img {
+    max-width: 100%;
+}
+
+article {
+    margin-bottom: 32px;
+}
+
+@media screen and (max-width: 640px) {
+    .container2 {
+        max-width: 80%
+    }
+
+    header .container {
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        column-gap: 5%;
+    }
+
+    .container img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .carousel-inner {
+        max-height: 63px;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .carousel-control-prev {
+        display: none;
+    }
+
+    .carousel-control-next {
+        display: none;
+    }
+
+    .reviews {
+        display: block;
+    }
+
+    .reviews img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container2 {
+        max-width: 80%
+    }
+
+    header .container {
+        max-width: 80%;
+    }
+
+    .container img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .carousel-inner {
+        max-height: 138px;
+    }
+
+    .reviews {
+        display: block;
+    }
+
+    .reviews {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 4%;
+        row-gap: 0%;
+    }
+
+.reviews img {
+        width: 100%;
+    }
+}
